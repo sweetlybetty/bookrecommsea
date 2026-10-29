@@ -527,8 +527,9 @@ a {
   padding: 50px 20px !important;
   box-sizing: border-box !important;
 
-  /* ใส่ภาพพื้นหลัง bg2.png */
-  background-image: url("images/bg2.png"), url("../images/bg2.png") !important;
+/* ใส่ภาพพื้นหลัง bg2.png */
+background-image: url("./images/bg2.png") !important;
+
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
