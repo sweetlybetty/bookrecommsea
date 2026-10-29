@@ -1,371 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPIUS</title>
 
-    <!-- ลิงก์ CSS -->
+    <!-- Responsive viewport -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NPIUS - Light in The Dark Sea</title>
+
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
-<header class="site-header">
-    <!-- Logo ด้านซ้าย -->
-    <a class="brand" href="#" aria-label="NPIUS home">
-        <span class="brand-mark" aria-hidden="true">
-            <svg class="globe-icon" viewBox="0 0 40 40">
-                <circle cx="20" cy="20" r="16" />
-                <ellipse cx="20" cy="20" rx="7" ry="16" />
-                <ellipse cx="20" cy="20" rx="16" ry="7" />
-                <line x1="4" y1="20" x2="36" y2="20" />
-            </svg>
-        </span>
-        <span class="brand-name">NPIUS</span>
-    </a>
+    <!-- =================================
+         MAIN WEBSITE
+    ================================== -->
 
-    <!-- Checkbox ควบคุมการเปิด-ปิดเมนูบนมือถือ -->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <main class="container">
 
-    <!-- ปุ่มแฮมเบอร์เกอร์ -->
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
 
-    <nav class="main-nav" aria-label="Main navigation">
-        <a href="#Be-a-Light-in-The-Dark-Sea">Be a Light in The Dark Sea</a>
-        <a href="#book-reviews">Book Reviews</a>
-        <a href="#characters">Characters</a>
-        <a href="#information">Informations</a>
-        <a class="login-button" href="#login">Login</a>
-    </nav>
-</header>
+        <!-- =================================
+             1. HERO SECTION
+        ================================== -->
 
-<main>
+        <section class="hero-section">
 
-    <section class="hero" id="Be-a-Light-in-The-Dark-Sea">
-        <!-- ฝูงปลาเรืองแสง -->
-        <div class="fish-container">
-            <div class="fish fish-1"><div class="fish-tail"></div><div class="fish-body"></div></div>
-            <div class="fish fish-2"><div class="fish-tail"></div><div class="fish-body"></div></div>
-            <div class="fish fish-3"><div class="fish-tail"></div><div class="fish-body"></div></div>
-            <div class="fish fish-4 small"><div class="fish-tail"></div><div class="fish-body"></div></div>
-            <div class="fish fish-5 small"><div class="fish-tail"></div><div class="fish-body"></div></div>
-        </div>
+            <nav class="navbar">
 
-        <p class="intro-copy">
-            แสงที่งดงามที่สุด<br>
-            อาจซ่อนอยู่ในความมืด<br>
-            <span class="highlight-text">ที่ลึกที่สุด</span>
-        </p>
+                <!-- LOGO -->
 
-        <p class="korea-name">어두운 바다의 등불이 되어</p>
-        <p class="thai-role">ใต้สมุทรไม่สิ้นแสง</p>
-    </section>
+                <div class="logo">
 
-    <!-- Checkbox สำหรับคุม Pop-up -->
-    <input type="checkbox" id="popup-toggle" class="popup-checkbox">
+                    <img
+                        src="images/npius_logo.png"
+                        alt="NPIUS Logo"
+                        class="logo-img">
 
-    <section class="hero-image-container" id="book-reviews">
-        <div class="hero-header-text">
-            <span class="vol-text">Volume 1</span>
-            <h2 class="title-text">ใต้สมุทรไม่สิ้นแสง</h2>
-        </div>
+                </div>
 
-        <div class="hero-book-wrapper">
-            <label for="popup-toggle" class="hero-image">
-                <img src="images/balitds_1.jpg" alt="ใต้สมุทรไม่สิ้นแสง เล่ม 1">
-            </label>
-        </div>
 
-        <div class="external-link-wrapper">
-            <a href="https://www.cloverbookpublishing.com/product/417/%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%AA%E0%B8%87-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-1-10-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1%E0%B8%88%E0%B8%9A"
-                target="_blank" rel="noopener noreferrer" class="external-site-btn">
-                Order here ↗
-            </a>
-        </div>
-    </section>
+                <!-- TAGLINE -->
 
-    <!-- Pop-up Modal -->
-    <div class="modal">
-        <div class="modal-content">
-            <label for="popup-toggle" class="close-btn">&times;</label>
-            <div class="drawer-body">
-                <p><strong>Genre : sci-fi, fantasy, survival</strong></p>
-                <p>เป็นเรื่องราวของทันตแพทย์หนุ่มคนหนึ่ง ที่ได้สมัครเข้าไปทำงาน ณ สถานีใต้ทะเลนานาชาติแปซิฟิกเหนือ ที่ตั้งอยู่ลึกถึง 3000 เมตร เป็นสถานที่รวบรวมนักวิจัย และผู้เชี่ยวชาญจากทั่วโลก</p>
-                <p>เมื่อทันตแพทย์หนุ่ม หรือ พัค มูฮยอน ได้เข้ามาทำงานในสถานที่แห่งนี้ได้เพียง 5 วันก็เกิดเรื่องราวประหลาดขึ้นมา นั่นคือเหตุการณ์น้ำรั่วสถานีใต้ทะเล หรือก็คือสถานที่ที่เขาได้พักอาศัย ทำให้เขาและคนอื่น ๆ ต้องหนีตายอย่างจ้าละหวั่น ทุกอย่างตกอยู่ในความโกลาหล ซึ่งเหตุการณ์สุดแสนจะประหลาดนี้ ทำให้เขาได้เข้าไปพัวพัน กับบางสิ่งบางอย่าง โปรดติดตามต่อในเล่ม อิอิ</p>
-                <p>จากคำนำที่ว่า "แสงที่งดงามที่สุดอาจซ่อนอยู่ ในความมืดที่ลึกที่สุด" หากได้อ่านเรื่องนี้พร้อมกับวิเคราะห์ตัวละคร จะทำให้ทราบได้ว่าทำไมเรื่องนี้ ถึงมีคำโปรยเช่นนี้ เพราะเมื่อยามที่เราสิ้นหวังที่สุด หากเราไม่ย่อท้อและไม่โอนอ่อนต่อกิเลส เราจะไปถึงเส้นชัย</p>
-                <p>ถือเป็นนิยายไซไฟ แฟนตาซี ที่สนุกอีกเรื่องหนึ่งเลยก็ว่าได้ ตัวของนักเขียนเองมีความรู้ เกี่ยวกับสิ่งแวดล้อม การรักษ์โลก และการนำจิตวิทยาเข้ามาใช้ในการดำเนินเรื่องที่เป็นตัวแปรสำคัญ ทำให้นิยายเรื่องนี้มอบข้อคิดให้เราได้หลายอย่าง และยังมอบมุมมองที่หลากหลายให้แก่ตัวเรา ทำให้เราพัฒนาความนึกคิดไปอีกขั้นได้ เพราะฉะนั้นอย่าลืมมาอ่านกัน</p>
+                <div class="sub-title">
+
+                    Be a Light in The Dark Sea
+
+                </div>
+
+
+                <!-- MEMBERSHIP -->
+
+                <button
+                    type="button"
+                    class="btn-membership">
+
+                    Membership
+
+                </button>
+
+            </nav>
+
+
+            <!-- HERO TEXT -->
+
+            <div class="hero-content">
+
+                <h1 class="hero-text">
+
+                    แสงที่งดงามที่สุด<br>
+                    อาจซ่อนอยู่ในความมืด<br>
+                    ที่ลึกที่สุด
+
+                </h1>
+
+
+                <p class="korean-text">
+
+                    어두운 바다의 등불이 되어
+
+                </p>
+
             </div>
-        </div>
-        <label for="popup-toggle" class="modal-overlay"></label>
-    </div>
 
-    <!-- Section แสดงตัวละคร -->
-    <section class="character-section" id="characters">
-        <div class="bubbles-container" id="bubblesContainer">
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-        </div>
+        </section>
 
-        <div class="character-card-container">
-            <div class="character-content">
-                <div class="character-media-group">
-                    <button type="button" class="nav-btn prev-btn" id="prevBtn" aria-label="Previous character">&#10094;</button>
 
-                    <div class="character-image-wrapper">
-                        <img id="charImg" src="images/park_muhyun.jpg" alt="พัค มูฮยอน">
+
+        <!-- =================================
+             2. VOLUME SECTION
+        ================================== -->
+
+        <section class="content-section">
+
+
+            <!-- CONTENT HEADER -->
+
+            <div class="content-header">
+
+                <span class="vol-text">
+                    Volume 1
+                </span>
+
+                <span class="right-title">
+                    ใต้สมุทรไม่สิ้นแสง
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================
+                 BOOK CARD
+            ================================== -->
+
+            <div class="card-container">
+
+                <!-- Checkbox สำหรับเปิด Drawer -->
+
+                <input
+                    type="checkbox"
+                    id="card-toggle"
+                    class="card-toggle-input">
+
+
+                <!-- BOOK -->
+
+                <label
+                    for="card-toggle"
+                    class="card-wrapper">
+
+                    <img
+                        src="images/balitds_1.jpg"
+                        alt="ใต้สมุทรไม่สิ้นแสง"
+                        class="card-image">
+
+                </label>
+
+
+
+                <!-- =================================
+                     DRAWER
+                ================================== -->
+
+                <div class="drawer-panel">
+
+
+                    <!-- DRAWER HEADER -->
+
+                    <div class="drawer-header">
+
+                        <h3>
+                            ใต้สมุทรไม่สิ้นแสง
+                        </h3>
+
+
+                        <label
+                            for="card-toggle"
+                            class="close-btn"
+                            aria-label="ปิด">
+
+                            &times;
+
+                        </label>
+
                     </div>
 
-                    <button type="button" class="nav-btn next-btn" id="nextBtn" aria-label="Next character">&#10095;</button>
+
+
+                    <!-- DRAWER CONTENT -->
+
+                    <div class="drawer-body">
+
+                        <p>
+                            <strong>
+                                Genre : sci-fi, fantasy, survival
+                            </strong>
+                        </p>
+
+
+                        <p>
+                            เป็นเรื่องราวของทันตแพทย์หนุ่มคนหนึ่ง
+                            ที่ได้สมัครเข้าไปทำงาน ณ
+                            สถานีใต้ทะเลนานาชาติแปซิฟิกเหนือ
+                            ที่ตั้งอยู่ลึกถึง 3000 เมตร
+                            เป็นสถานที่รวบรวมนักวิจัย
+                            และผู้เชี่ยวชาญจากทั่วโลก
+                        </p>
+
+
+                        <p>
+                            เมื่อทันตแพทย์หนุ่ม หรือ พัค มูฮยอน
+                            ได้เข้ามาทำงานในสถานที่แห่งนี้
+                            ได้เพียง 5 วันก็เกิดเรื่องราวประหลาดขึ้นมา
+                            นั่นคือเหตุการณ์น้ำรั่วสถานีใต้ทะเล
+                            หรือก็คือสถานที่ที่เขาได้พักอาศัย
+                            ทำให้เขาและคนอื่น ๆ
+                            ต้องหนีตายอย่างจ้าละหวั่น
+                            ทุกอย่างตกอยู่ในความโกลาหล
+                        </p>
+
+
+                        <p>
+                            ซึ่งเหตุการณ์สุดแสนจะประหลาดนี้
+                            ทำให้เขาได้เข้าไปพัวพัน
+                            กับบางสิ่งบางอย่าง
+                            โปรดติดตามต่อในเล่ม อิอิ
+                        </p>
+
+
+                        <p>
+                            จากคำนำที่ว่า
+                            "แสงที่งดงามที่สุดอาจซ่อนอยู่
+                            ในความมืดที่ลึกที่สุด"
+                            หากได้อ่านเรื่องนี้พร้อมกับวิเคราะห์ตัวละคร
+                            จะทำให้ทราบได้ว่าทำไมเรื่องนี้
+                            ถึงมีคำโปรยเช่นนี้
+                        </p>
+
+
+                        <p>
+                            ถือเป็นนิยายไซไฟ แฟนตาซี
+                            ที่สนุกอีกเรื่องหนึ่งเลยก็ว่าได้
+                            เพราะตัวของนักเขียนเองก็มีความรู้
+                            เกี่ยวกับสิ่งแวดล้อมและการรักษ์โลก
+                            เพราะฉะนั้นอย่าลืมมาอ่านกัน
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="character-info">
-                    <h3 class="char-name" id="charName">พัค มูฮยอน</h3>
-                    <p class="char-occupation" id="charOccupation">ทันตแพทย์</p>
-                    <p class="char-desc" id="charDesc">
-                        ทันตแพทย์หนุ่มผู้เพิ่งเข้ามาทำงาน ณ สถานีใต้ทะเลนานาชาติแปซิฟิกเหนือ ได้เพียง 5 วัน น่ารัก จิตใจดี มีเมตตา ผู้มาโปรด พระเจ้าของเหล่าปวงชนทุกคน
-                    </p>
-                </div>
+
+
+                <!-- OVERLAY -->
+
+                <label
+                    for="card-toggle"
+                    class="drawer-overlay">
+                </label>
+
             </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="information">
-        <h2 class="faq-title">FAQ</h2>
-        <p class="faq-intro">ข้อมูลเกี่ยวกับเรื่อง ใต้สมุทรไม่สิ้นแสง</p>
-        <div class="faq-grid">
-            <article class="faq-item">
-                <h3>Author</h3>
-                <p>Softcoral หรือ 연산호 <br> นักเขียนนิยายชาวเกาหลีใต้ ที่มีชื่อเสียงโด่งดังจากผลงานแนวโมเดิร์นแฟนตาซี วิทยาศาสตร์ และการเอาชีวิตรอด</p>
-            </article>
-            <article class="faq-item">
-                <h3>Plublisher</h3>
-                <p> สำนักพิมพ์ cloverbook publishing</p>
-            </article>
-            <article class="faq-item">
-                <h3>Status</h3>
-                <p>มี 10 เล่มจบ รวมตอนพิเศษ 1 เล่ม <br> สถานะตอนนี้ ออกมา 8 เล่ม ยังไม่จบ กำลังเปิดนัดรับที่งานมหกรรมหนังสือระดับชาติ ครั้งที่ 31 (Book Expo Thailand 2026)</p>
-            </article>
-            <article class="faq-item">
-                <h3>Pricing</h3>
-                <p>หนังสือราคาเริ่มต้นที่ 290 บาท - 360 บาท ไม่รวมส่วนลดจากการจัดโปรโมชัน <br>ซื้อเล่ม 1-9 ตอนนี้ได้ราคา 2,860 บาท นัดรับงานหนังสือฟรีค่าจัดส่ง</p>
-            </article>
-            <article class="faq-item">
-                <h3>Goods</h3>
-                <p>มีสแตนดี้ทั้งหมด 16 ลาย 11 ตัวละคร <br>สามารถสั่งซื้อได้ที่เว็บไซต์สำนักพิมพ์ หรือ #ตลาดนัดออบาดึง ผ่าน X </p>
-            </article>
-            <article class="faq-item">
-                <h3>Fans</h3>
-                <p>ชื่อด้อมชาวออบาดึง ภาษาเกาหลี คือ 등러 ที่แปลว่า "กลุ่มคนที่เป็นแสงตะเกียง" <br>ชื่อด้อม ภาษาไทย คือ บาดึงเล่อ</p>
-            </article>
-        </div>
-    </section>
+        </section>
 
-</main>
 
-<footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <span class="globe-icon">🌐</span>
-            <span class="logo-text">NPIUS</span>
-        </div>
 
-        <p class="footer-message">
-            I love Be a Light in The Dark Sea. Please support Softcoral & Cloverbook publishing
-        </p>
+        <!-- =================================
+             3. ABOUT SECTION
+        ================================== -->
 
-        <div class="footer-socials">
-            <a href="https://www.facebook.com/share/g/17us68UYcf/" aria-label="Facebook"><i class="fab fa-facebook-f"></i> f</a>
-            <a href="https://x.com/cloverbook_th?s=20" aria-label="Twitter"><i class="fab fa-twitter"></i> ♥</a>
-        </div>
-    </div>
-    <div class="legal-links">
-        <span>© 2024 Your Website. All rights reserved.</span>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms of Service</a>
-    </div>
-</footer>
+        <section class="about-section">
 
-<button id="test-sound" type="button" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
-    🔊 ทดสอบเสียง
-</button>
 
-<script>
-let audioContext;
+            <div class="about-container">
 
-// 1. ระบบเสียง Web Audio API
-function initSound() {
-    if (!audioContext) {
-        audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    }
-    if (audioContext.state === "suspended") {
-        audioContext.resume();
-    }
-}
 
-function playSound(freq = 800, duration = 0.1, volume = 0.08) {
-    initSound();
-    const oscillator = audioContext.createOscillator();
-    const gain = audioContext.createGain();
+                <!-- ABOUT BADGE -->
 
-    oscillator.type = "sine";
-    oscillator.frequency.value = freq;
+                <div class="about-badge">
 
-    gain.gain.setValueAtTime(volume, audioContext.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + duration);
+                    About
 
-    oscillator.connect(gain);
-    gain.connect(audioContext.destination);
+                </div>
 
-    oscillator.start();
-    oscillator.stop(audioContext.currentTime + duration);
-}
 
-// 2. ระบบเปลี่ยนตัวละครทั้ง 5 คน + Bubble ลอย
-document.addEventListener('DOMContentLoaded', () => {
-    const characters = [
-        {
-            name: "พัค มูฮยอน",
-            occupation: "ทันตแพทย์",
-            desc: "ทันตแพทย์หนุ่มผู้เพิ่งเข้ามาทำงาน ณ สถานีใต้ทะเลนานาชาติแปซิฟิกเหนือ ได้เพียง 5 วัน น่ารัก จิตใจดี มีเมตตา ผู้มาโปรด พระเจ้าของเหล่าปวงชนทุกคน",
-            img: "images/park_muhyun.jpg"
-        },
-        {
-            name: "ชิน แฮรยัง",
-            occupation: "หัวหน้าทีมเอนจีเนียร์ทีมคา",
-            desc: "หัวหน้าทีมเอนจีเนียร์ ประเทศเกาหลี ผู้ที่เอาชนะทุกประเทศเพื่อที่จะให้เกาะแห่งนี้ชื่อ เกาะแทฮัน หน้าตาดี หล่อ แต่เป็นฮิปโปกับตู้เย็น",
-            img: "images/shin_haeryung.jpg"
-        },
-        {
-            name: "ซอ จีฮยอก",
-            occupation: "เอนจีเนียร์ทีมคา",
-            desc: "เอนจีเนียร์ซ่อมแซมสถานีใต้ทะเลลึก สัญชาติเกาหลี ตัวใหญ่เท่าฝาบ้าน ดูจิงโจ้แต่จริง ๆ ก็จริงจังอยู่ นักแม่นปืนเยี่ยม ๆ ขี้เล่นแต่ปากหมา",
-            img: "images/seo_jihyuk.jpg"
-        },
-        {
-            name: "แพค แอยอง",
-            occupation: "เอนจีเนียร์ทีมคา",
-            desc: "เอนจีเนียร์ซ่อมแซมสถานีใต้ทะเลลึก สัญชาติเกาหลี หน้าตาน่ารักเหมือนแมว เมี๊ยว ๆ รักผู้หญิง อึด ถึก ทน และวิ่งเร็วปานสายฟ้าอย่างกับยูเซน โบลต์",
-            img: "images/baek_aeyeong.jpg"
-        },
-        {
-            name: "ยู กึมอี",
-            occupation: "นักวิจัย",
-            desc: "นักชีววิทยาทางทะเล ผู้ที่โหยขนมปังมากที่สุด เป็นพิกกี้บู ๆ ของแม่ ฉลาดเป็นกรด วิจัยเกี่ยวกับสัตว์ใต้ทะเลลึก 3,000 เมตร",
-            img: "images/yoo_keume.jpg"
-        }
-    ];
 
-    let currentCharIndex = 0;
+                <!-- ABOUT CARD -->
 
-    const charImg = document.getElementById('charImg');
-    const charName = document.getElementById('charName');
-    const charOccupation = document.getElementById('charOccupation');
-    const charDesc = document.getElementById('charDesc');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const bubblesContainer = document.getElementById('bubblesContainer');
-    const mediaGroup = document.querySelector('.character-media-group');
+                <div class="about-card">
 
-    function updateCharacter(index) {
-        const char = characters[index];
-        if (charImg) {
-            charImg.src = char.img;
-            charImg.alt = char.name;
-        }
-        if (charName) charName.textContent = char.name;
-        if (charOccupation) charOccupation.textContent = char.occupation;
-        if (charDesc) charDesc.textContent = char.desc;
-    }
 
-    function changeCharacter(direction) {
-        currentCharIndex = (currentCharIndex + direction + characters.length) % characters.length;
-        updateCharacter(currentCharIndex);
-    }
+                    <div class="about-content">
 
-    function createBubble(x, y) {
-        if (!bubblesContainer) return;
-        const bubble = document.createElement('div');
-        bubble.className = 'bubble';
-        const rect = bubblesContainer.getBoundingClientRect();
-        bubble.style.left = `${x - rect.left}px`;
-        bubble.style.top = `${y - rect.top}px`;
-        bubblesContainer.appendChild(bubble);
-        setTimeout(() => bubble.remove(), 1500);
-    }
+                        <p>
 
-    // ผูก Event ปุ่มถัดไป
-    if (nextBtn) {
-        nextBtn.onclick = function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            playSound(900, 0.1, 0.08);
-            changeCharacter(1);
-        };
-    }
+                            <strong>ชื่อภาษาไทย :</strong>
+                            ใต้สมุทรไม่สิ้นแสง
+                            <br>
 
-    // ผูก Event ปุ่มย้อนกลับ
-    if (prevBtn) {
-        prevBtn.onclick = function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            playSound(700, 0.1, 0.08);
-            changeCharacter(-1);
-        };
-    }
+                            <strong>ผู้แต่ง :</strong>
+                            Softcoral
+                            <br>
 
-    // คลิกพื้นที่สร้าง Bubble (เช็กไม่ให้สร้างเมื่อกดปุ่ม)
-    if (mediaGroup) {
-        mediaGroup.addEventListener('click', (e) => {
-            if (e.target.closest('.nav-btn')) return; // ถ้าคลิกโดนปุ่ม ให้ข้ามการสร้าง Bubble
-            playSound(800, 0.1, 0.08);
-            createBubble(e.clientX, e.clientY);
-        });
-    }
+                            <strong>สำนักพิมพ์ :</strong>
+                            Clover Book
+                            <br>
 
-    // โหลดตัวละครแรกทันที
-    updateCharacter(0);
-});
+                            <strong>จำนวนเล่ม :</strong>
+                            10 เล่มจบรวมตอนพิเศษ
+                            มีทั้ง physical book และ e-book
+                            <br>
 
-// 3. เสียงคลิกและ Scroll เสียงทั่วไป
-document.addEventListener("click", initSound, { once: true });
+                            <strong>ราคาเล่ม :</strong>
+                            290-360 บาท
+                            <br>
 
-document.addEventListener("click", function (event) {
-    // ข้ามปุ่มเลื่อนรูปภาพ เพื่อไม่ให้เสียงเล่นซ้อนกัน
-    if (event.target.closest('.nav-btn')) return;
-    
-    if (event.target.closest("a, button")) {
-        playSound(850, 0.1, 0.08);
-    }
-});
+                            <strong>สามารถตามหานิยายมือ 2
+                            และของสะสมได้ที่ :</strong>
+                            x #ตลาดนัดออบาดึง,
+                            Facebook ใต้สมุทรไม่สิ้นแสง community
 
-let lastScroll = 0;
-window.addEventListener("scroll", function () {
-    const now = Date.now();
-    if (audioContext && audioContext.state === "running" && now - lastScroll > 700) {
-        playSound(500, 0.06, 0.025);
-        lastScroll = now;
-    }
-}, { passive: true });
+                        </p>
 
-document.getElementById("test-sound")?.addEventListener("click", function () {
-    playSound(1000, 0.2, 0.1);
-});
-</script>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             4. FOOTER
+        ================================== -->
+
+        <footer class="footer-section">
+
+
+            <span>
+                ชนัสถ์นันท์ สิทธิสม
+            </span>
+
+
+            <span>
+                670510832
+            </span>
+
+
+            <span>
+                Prototype
+            </span>
+
+
+        </footer>
+
+
+    </main>
+
 
 </body>
+
 </html>
